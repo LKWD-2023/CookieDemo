@@ -1,0 +1,10 @@
+﻿@model CookieDemoViewModel
+
+@if(!Model.HasBeenHere)
+{
+    <h1>Welcome to my awesome website!</h1>
+}
+else 
+{
+    <h1>Welcome back, good to see you. Last time you were here was @Model.LastVisit.ToString()</h1>
+}
